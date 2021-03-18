@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChildModule1" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-18T14:49:49" hostname="Nags-MacBook.local" time="0.137">
+  <properties/>
+  <testcase name="Execute ChildModule1" classname="ChildModule1" time="0.137"/>
+  <system-out><![CDATA[
+Scenario: Execute ChildModule1         # src/test/resources/ChildModule1.feature:3
+ParentModule compiled
+  Given ParentModule is compiled       # ChildModule1.parent_module_is_compiled()
+ParentModule built
+  And built                            # ChildModule1.built()
+ParentModule tested
+  And tested                           # ChildModule1.tested()
+ParentModule to ChildModule1
+  When control falls into ChildModule1 # ChildModule1.control_falls_into_child_module1()
+ChildModule1 executed
+  Then run class files                 # ChildModule1.run_class_files()
+ChildModule1 reported
+  And generate report                  # ChildModule1.generate_report()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
