@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './gradlew clean build'
+                sh './gradlew -p ${WORKSPACE}/ParentModule clean build'
             }
         }
         stage('check1') {
